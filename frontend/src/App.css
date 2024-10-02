@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active .text-blue-500 {
+    @apply text-white bg-blue-500;
+}
+
+
+
+.vis-item.tense-past {
+    background-color: #ec4899; /* Tailwind pink-500 color */
+    border-color: #ec4899; /* Tailwind pink-500 color */
+}
+
+.vis-item.tense-past:hover {
+    background-color: #db2777; /* Darker pink for hover effect */
+}
+
+.vis-item.tense-present {
+    background-color: #f59e0b; /* Tailwind amber-500 color */
+    border-color: #f59e0b; /* Tailwind amber-500 color */
+}
+
+.vis-item.tense-present:hover {
+    background-color: #d97706; /* Darker amber for hover effect */
+}
+
+.vis-item.tense-future {
+    background-color: #14b8a6; /* Tailwind teal-500 */
+    border-color: #14b8a6; /* Tailwind teal-500 */
+}
+
+.vis-item.tense-future:hover {
+    background-color: #0d9488; /* Tailwind teal-600 */
+}
+
+.vis-item.tense-ambiguous {
+    background-color: #9ca3af; /* Tailwind gray-400 */
+    border-color: #9ca3af; /* Tailwind gray-400 */
+}
+
+.vis-item.tense-ambiguous:hover {
+    background-color: #6b7280; /* Tailwind gray-500 */
+}
+
+/* Sentiment Colors */
+.vis-item.sentiment-positive {
+    background-color: #22c55e; /* Tailwind green-500 */
+    border-color: #22c55e; /* Tailwind green-500 */
+}
+
+.vis-item.sentiment-positive:hover {
+    background-color: #16a34a; /* Darker green for hover effect */
+}
+
+.vis-item.sentiment-neutral {
+    background-color: #9ca3af; /* Tailwind gray-400 */
+    border-color: #9ca3af; /* Tailwind gray-400 */
+}
+
+.vis-item.sentiment-neutral:hover {
+    background-color: #6b7280; /* Tailwind gray-500 */
+}
+
+.vis-item.sentiment-negative {
+    background-color: #ef4444; /* Tailwind red-500 */
+    border-color: #ef4444; /* Tailwind red-500 */
+}
+
+.vis-item.sentiment-negative:hover {
+    background-color: #dc2626; /* Darker red for hover effect */
+}
+
+/* Normal Item Colors */
+.vis-item.normal-item {
+    background-color: #3b82f6; /* Tailwind blue-500 */
+    border-color: #3b82f6; /* Tailwind blue-500 */
+}
+
+.vis-item.normal-item:hover {
+    background-color: #2563eb; /* Darker blue for hover effect */
+}
+
+.vis-item.pause-non-connectional {
+    background-color: #64748b; /* Tailwind slate-500 */
+    border-color: #64748b; /* Tailwind slate-500 */
+}
+
+.vis-item.pause-non-connectional:hover {
+    background-color: #475569; /* Tailwind slate-600 */
+}
+
+.vis-item.pause-invitational {
+    background-color: #0ea5e9; /* Tailwind sky-500 */
+    border-color: #0ea5e9; /* Tailwind sky-500 */
+}
+
+.vis-item.pause-invitational:hover {
+    background-color: #0284c7; /* Tailwind sky-600 */
+}
+
+.vis-item.pause-emotional {
+    background-color: #f97316; /* Tailwind orange-500 */
+    border-color: #f97316; /* Tailwind orange-500 */
+}
+
+.vis-item.pause-emotional:hover {
+    background-color: #ea580c; /* Tailwind orange-600 */
+}
+
+.vis-item.highlighted-item {
+    background-color: #fde047; /* Tailwind yellow-300 */
+    border-color: #fde047; /* Tailwind yellow-300 */
+}
+
+.vis-item.highlighted-item:hover {
+    background-color: #facc15; /* Tailwind yellow-400 */
+}
+
+/* Customizing the vis-timeline */
+.vis-timeline {
+    background-color: #f8fafc; /* Background color similar to app */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 10px; /* Add some padding inside the timeline */
+}
+
+.vis-item {
+    border: none; /* Remove default border */
+    color: white; /* White text color for better contrast */
+    border-radius: 2px; /* Rounded corners for items */
+    padding: 2px 4px; /* Add some padding inside items */
+}
+
+.vis-timeline .vis-label {
+    color: #1e3a8a; /* Tailwind blue-900 color for labels */
+    font-weight: 600; /* Bold labels */
+}
+
+.vis-timeline .vis-grid.vis-vertical {
+    border-left: 1px solid #e2e8f0; /* Tailwind gray-300 color for grid lines */
+}
+
+.vis-timeline .vis-foreground .vis-zoom .vis-labels {
+    background-color: #f1f5f9; /* Light background for zoom area */
+}
+
+.vis-timeline .vis-panel.vis-bottom {
+    background-color: #e2e8f0; /* Tailwind gray-300 color for bottom panel */
+}
+
+/* Customize the vertical scroll bar */
+.vis-timeline .vis-panel.vis-center .vis-scrollbar-vertical {
+    background-color: #cbd5e1; /* Tailwind gray-200 color for scroll bar */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.vis-timeline .vis-panel.vis-center .vis-scrollbar-vertical .vis-scrollbar-thumb {
+    background-color: #6b7280; /* Tailwind gray-600 color */
+    border-radius: 4px; /* Rounded corners */
+}
