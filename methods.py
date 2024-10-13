@@ -5,6 +5,10 @@ import nltk
 from VCL_Temporal_Reference_Tagger import getTemporalReference
 
 
+#TODO INPUT ASSEMBLY AI KEY HERE:
+AAI_API_KEY = ""
+
+
 def annotate_sentence(sentence):
     """
     Takes sentence and returns tuple with sentence and assigned tense (PAST, PRESENT, FUTURE, or AMBIGUOUS)
@@ -59,8 +63,7 @@ def annotate_text(text):
 
 
 def generate_transcript(audio_file):
-    #TODO INPUT ASSEMBLY AI KEY HERE:
-    aai.settings.api_key = ""
+    aai.settings.api_key = AAI_API_KEY
 
     config = aai.TranscriptionConfig(sentiment_analysis=True, speaker_labels=True)
 
@@ -191,6 +194,7 @@ def transcript_to_dict_object(transcript):
     return processed_transcript
 
 
+"""
 # OUTDATED METHOD, left for reference
 
 # Speaker transcription didn't align with another 
@@ -268,15 +272,8 @@ def transcript_to_dict_object_old(transcript):
                                                               tense] / total_sentences) * 100
 
     return processed_transcript
-
+"""
 
 def transcript_to_json(transcript_dict_object, filename):
     with open(filename, 'w') as file:
         json.dump(transcript_dict_object, file, indent=4)
-
-
-if __name__ == "__main__":
-    transcript = generate_transcript("matrix.mp3")
-    for utterance in transcript.utterances:
-        print(utterance)
-    transcript_to_dict_object(transcript)
