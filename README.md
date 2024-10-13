@@ -42,7 +42,7 @@ Clicking on a sentence item will display the text, along with the tense, sentime
 
 Clone this repository. You will need `node` (for `npm`) and `python3` installed on your machine.
 
-##### Set up backend:
+#### Set up backend:
 
 Enter the repository:
 
@@ -72,7 +72,7 @@ Run backend server:
 
 `python3 manage.py runserver`
 
-##### Set up frontend:
+#### Set up frontend:
 
 With the backend server now live, open a new terminal window and navigate back to the top level of the repo.
 
