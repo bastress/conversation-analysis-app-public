@@ -7,7 +7,7 @@ const Layout = () => {
             <header className="bg-white shadow-md p-4">
                 <div className="flex justify-between items-center">
                     <NavLink to="/" className="text-2xl font-bold text-blue-500 hover:text-blue-700">
-                        Audio Transcription
+                        Conversation Analysis
                     </NavLink>
                     <nav className="flex space-x-4">
                         <NavLink to="/upload">
