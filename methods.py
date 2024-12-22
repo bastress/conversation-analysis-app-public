@@ -96,8 +96,6 @@ def transcript_to_dict_object(transcript):
 
     for j, sentence in enumerate(transcript.sentiment_analysis):
 
-        print(f"SPEAKER: {sentence.speaker}")
-
         # Case: new speaker or last sentence
         if sentence.speaker != cur_speaker or j == total_sentences - 1:
 
@@ -181,8 +179,6 @@ def transcript_to_dict_object(transcript):
 
     # Set speakers after loop
     processed_transcript['speakers'] = speakers
-    print("*****SPEAKERS:")
-    print(speakers)
 
     # Convert counts to percentages
     if total_sentences > 0:
